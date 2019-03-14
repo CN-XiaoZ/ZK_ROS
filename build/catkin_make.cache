@@ -1,0 +1,2 @@
+ZK_ROS
+-DCATKIN_DEVEL_PREFIX=/home/zyc/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zyc/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ZK_ROS
+Description: Description of ZK_ROS
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 
