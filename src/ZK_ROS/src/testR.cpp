@@ -45,7 +45,29 @@ void AnalysisData(uint8_t temp)
                     {
                         if (rx_buff[3] == 0x01) //返回传感器数据
                         {
-                            ROS_INFO("GETMESSAGE!");
+                            short Ax,Ay,Az;
+                            short Dx,Dy,Dz;
+                            Ax = ((short)rx_buff[4]<<8|rx_buff[5]);
+                            Ay = ((short)rx_buff[6]<<8|rx_buff[7]);
+                            Az = ((short)rx_buff[8]<<8|rx_buff[9]);
+
+                            Dx = ((short)rx_buff[16]<<8|rx_buff[17]);
+                            Dy = ((short)rx_buff[18]<<8|rx_buff[19]);
+                            Dz = ((short)rx_buff[20]<<8|rx_buff[21]);
+
+                            double Axf,Ayf,Azf;
+                            double Dxf,Dyf,Dzf;
+
+                            Axf = (Ax/32768.0)*16;
+                            Ayf = (Ay/32768.0)*16;
+                            Azf = (Az/32768.0)*16;
+
+                            Dxf = (Dx/32768.0)*180;
+                            Dyf = (Dy/32768.0)*180;
+                            Dzf = (Dz/32768.0)*180;
+
+                            ROS_INFO("Ax: %d Ay: %d Az:%d Dx: %d Dy: %d Dz: %d",Ax,Ay,Az,Dx,Dy,Dz);
+                            ROS_INFO("Ax: %lf Ay: %lf Az:%lf Dx: %lf Dy: %lf Dz: %lf",Axf,Ayf,Azf,Dxf,Dyf,Dzf);
                         }
                     }
                 }

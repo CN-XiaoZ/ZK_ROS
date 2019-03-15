@@ -19,7 +19,18 @@ void PrintROSUint8MultiArray(std_msgs::UInt8MultiArray Data, int RorW) {
     }
     ROS_INFO("%s", tmp);
 }
+//test ....
+int speed[5];
+void getFromFile(){
+    FILE *fp = fopen("/home/zyc/catkin_ws/1.txt","r");
+    //if(fp){
+      //  ROS_INFO("??");
+    //}
+    //else ROS_INFO("....");
+   fscanf(fp,"%d %d %d %d",&speed[0],&speed[1],&speed[2],&speed[3]);
 
+    fclose(fp);
+}
 int main(int argc, char **argv) {
     int i;
 
@@ -35,10 +46,17 @@ int main(int argc, char **argv) {
 
     while (ros::ok()) {
         std_msgs::UInt8MultiArray val;
-        if (count % 10 == 0)
+        if (count % 5 == 0)
         {
             std_msgs::UInt8MultiArray val;
-            val.data.push_back(0x01);
+            getFromFile();
+            val.data.push_back(0x04);
+            for(int j=0;j<4;++j){
+                val.data.push_back(speed[j]>0?1:0);
+                speed[j]=abs(speed[j]);
+                val.data.push_back((speed[j]&0xFF00)>>8);
+                val.data.push_back((speed[j]&0xFF));
+            }
             TestW.publish(val);
             PrintROSUint8MultiArray(val, 1);
         }
