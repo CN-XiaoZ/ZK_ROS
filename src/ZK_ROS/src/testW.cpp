@@ -4,6 +4,10 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "std_msgs/UInt8MultiArray.h"
+#include "std_msgs/Float64MultiArray.h"
+
+double Angle[3];
+
 
 
 void PrintROSUint8MultiArray(std_msgs::UInt8MultiArray Data, int RorW) {
@@ -31,6 +35,15 @@ void getFromFile(){
 
     fclose(fp);
 }
+
+void AngleSetCallBack(const std_msgs::Float64MultiArray::ConstPtr &Data)
+{
+    Angle[0]=Data->data[0];
+    Angle[1]=Data->data[1];
+    Angle[2]=Data->data[2];
+    printf("%lf %lf %lf",Data->data[0],Data->data[1],Data->data[2]);
+}
+
 int main(int argc, char **argv) {
     int i;
 
@@ -39,6 +52,7 @@ int main(int argc, char **argv) {
     ros::NodeHandle n;
 
     ros::Publisher TestW = n.advertise<std_msgs::UInt8MultiArray>("serialW", 1000);
+    ros::Subscriber AngleListener = n.subscribe("angle", 1000, AngleSetCallBack);
 
     ros::Rate loop_rate(10);
 
@@ -58,7 +72,9 @@ int main(int argc, char **argv) {
                 val.data.push_back((speed[j]&0xFF));
             }
             TestW.publish(val);
-            PrintROSUint8MultiArray(val, 1);
+            std_msgs::UInt8MultiArray val2;
+            val2.data.push_back(0x01);
+            TestW.publish(val2);
         }
         ros::spinOnce();
         loop_rate.sleep();
