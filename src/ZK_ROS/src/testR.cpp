@@ -48,13 +48,14 @@ void AnalysisData(uint8_t temp)
                         if (rx_buff[3] == 0x01) //返回传感器数据
                         {
                             short Dx,Dy,Dz;
-                            Dx = ((short)rx_buff[18]<<8|rx_buff[19]);
-                            Dy = ((short)rx_buff[20]<<8|rx_buff[21]);
-                            Dz = ((short)rx_buff[22]<<8|rx_buff[23]);
+                            Dx = ((short)rx_buff[16]<<8|rx_buff[17]);
+                            Dy = ((short)rx_buff[18]<<8|rx_buff[19]);
+                            Dz = ((short)rx_buff[20]<<8|rx_buff[21]);
 
                             Angle[0] = (Dx/32768.0)*180;
                             Angle[1] = (Dy/32768.0)*180;
                             Angle[2] = (Dz/32768.0)*180;
+                            printf("%lf %lf %lf\n",Angle[0],Angle[1],Angle[2]);
 
                         }
                     }
