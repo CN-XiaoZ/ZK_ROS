@@ -148,6 +148,22 @@ add_executable(testW src/testW.cpp)
 target_link_libraries(testW ${catkin_LIBRARIES})
 add_dependencies(testW ${PROJECT_NAME}_generate_messages_cpp)
 
+add_executable(serialRW_ZD src/serialRW_ZD.cpp)
+target_link_libraries(serialRW_ZD ${catkin_LIBRARIES})
+add_dependencies(serialRW_ZD ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(testR_ZD src/testR_ZD.cpp)
+target_link_libraries(testR_ZD ${catkin_LIBRARIES})
+add_dependencies(testR_ZD ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(testW_ZD src/testW_ZD.cpp)
+target_link_libraries(testW_ZD ${catkin_LIBRARIES})
+add_dependencies(testW_ZD ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(Order src/Order.cpp)
+target_link_libraries(Order ${catkin_LIBRARIES})
+add_dependencies(Order ${PROJECT_NAME}_generate_messages_cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use

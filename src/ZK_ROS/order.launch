@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="ZK_ROS" type="serialRW" name="serialRW" output="log"></node>
+    <node pkg="ZK_ROS" type="testW" name="TestW" output="log"></node>
+    <node pkg="ZK_ROS" type="testR" name="TestR" output="log"></node>
+    <node pkg="ZK_ROS" type="Order" name="Order" output="screen"></node>
+</launch>

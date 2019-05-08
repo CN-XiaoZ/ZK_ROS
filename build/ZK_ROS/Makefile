@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ZK_ROS/CMakeFiles/testW_ZD.dir/rule:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/testW_ZD.dir/rule
+.PHONY : ZK_ROS/CMakeFiles/testW_ZD.dir/rule
+
+# Convenience name for target.
+testW_ZD: ZK_ROS/CMakeFiles/testW_ZD.dir/rule
+
+.PHONY : testW_ZD
+
+# fast build rule for target.
+testW_ZD/fast:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testW_ZD.dir/build.make ZK_ROS/CMakeFiles/testW_ZD.dir/build
+.PHONY : testW_ZD/fast
+
+# Convenience name for target.
+ZK_ROS/CMakeFiles/testR_ZD.dir/rule:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/testR_ZD.dir/rule
+.PHONY : ZK_ROS/CMakeFiles/testR_ZD.dir/rule
+
+# Convenience name for target.
+testR_ZD: ZK_ROS/CMakeFiles/testR_ZD.dir/rule
+
+.PHONY : testR_ZD
+
+# fast build rule for target.
+testR_ZD/fast:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testR_ZD.dir/build.make ZK_ROS/CMakeFiles/testR_ZD.dir/build
+.PHONY : testR_ZD/fast
+
+# Convenience name for target.
 ZK_ROS/CMakeFiles/testW.dir/rule:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/testW.dir/rule
 .PHONY : ZK_ROS/CMakeFiles/testW.dir/rule
@@ -241,6 +271,21 @@ roscpp_generate_messages_lisp: ZK_ROS/CMakeFiles/roscpp_generate_messages_lisp.d
 roscpp_generate_messages_lisp/fast:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make ZK_ROS/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+ZK_ROS/CMakeFiles/Order.dir/rule:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/Order.dir/rule
+.PHONY : ZK_ROS/CMakeFiles/Order.dir/rule
+
+# Convenience name for target.
+Order: ZK_ROS/CMakeFiles/Order.dir/rule
+
+.PHONY : Order
+
+# fast build rule for target.
+Order/fast:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/Order.dir/build.make ZK_ROS/CMakeFiles/Order.dir/build
+.PHONY : Order/fast
 
 # Convenience name for target.
 ZK_ROS/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
@@ -378,6 +423,21 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+ZK_ROS/CMakeFiles/serialRW_ZD.dir/rule:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/serialRW_ZD.dir/rule
+.PHONY : ZK_ROS/CMakeFiles/serialRW_ZD.dir/rule
+
+# Convenience name for target.
+serialRW_ZD: ZK_ROS/CMakeFiles/serialRW_ZD.dir/rule
+
+.PHONY : serialRW_ZD
+
+# fast build rule for target.
+serialRW_ZD/fast:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/serialRW_ZD.dir/build.make ZK_ROS/CMakeFiles/serialRW_ZD.dir/build
+.PHONY : serialRW_ZD/fast
+
+# Convenience name for target.
 ZK_ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ZK_ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : ZK_ROS/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -437,6 +497,33 @@ std_msgs_generate_messages_py/fast:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ZK_ROS/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/Order.o: src/Order.cpp.o
+
+.PHONY : src/Order.o
+
+# target to build an object file
+src/Order.cpp.o:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/Order.dir/build.make ZK_ROS/CMakeFiles/Order.dir/src/Order.cpp.o
+.PHONY : src/Order.cpp.o
+
+src/Order.i: src/Order.cpp.i
+
+.PHONY : src/Order.i
+
+# target to preprocess a source file
+src/Order.cpp.i:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/Order.dir/build.make ZK_ROS/CMakeFiles/Order.dir/src/Order.cpp.i
+.PHONY : src/Order.cpp.i
+
+src/Order.s: src/Order.cpp.s
+
+.PHONY : src/Order.s
+
+# target to generate assembly for a file
+src/Order.cpp.s:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/Order.dir/build.make ZK_ROS/CMakeFiles/Order.dir/src/Order.cpp.s
+.PHONY : src/Order.cpp.s
+
 src/serialRW.o: src/serialRW.cpp.o
 
 .PHONY : src/serialRW.o
@@ -463,6 +550,33 @@ src/serialRW.s: src/serialRW.cpp.s
 src/serialRW.cpp.s:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/serialRW.dir/build.make ZK_ROS/CMakeFiles/serialRW.dir/src/serialRW.cpp.s
 .PHONY : src/serialRW.cpp.s
+
+src/serialRW_ZD.o: src/serialRW_ZD.cpp.o
+
+.PHONY : src/serialRW_ZD.o
+
+# target to build an object file
+src/serialRW_ZD.cpp.o:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/serialRW_ZD.dir/build.make ZK_ROS/CMakeFiles/serialRW_ZD.dir/src/serialRW_ZD.cpp.o
+.PHONY : src/serialRW_ZD.cpp.o
+
+src/serialRW_ZD.i: src/serialRW_ZD.cpp.i
+
+.PHONY : src/serialRW_ZD.i
+
+# target to preprocess a source file
+src/serialRW_ZD.cpp.i:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/serialRW_ZD.dir/build.make ZK_ROS/CMakeFiles/serialRW_ZD.dir/src/serialRW_ZD.cpp.i
+.PHONY : src/serialRW_ZD.cpp.i
+
+src/serialRW_ZD.s: src/serialRW_ZD.cpp.s
+
+.PHONY : src/serialRW_ZD.s
+
+# target to generate assembly for a file
+src/serialRW_ZD.cpp.s:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/serialRW_ZD.dir/build.make ZK_ROS/CMakeFiles/serialRW_ZD.dir/src/serialRW_ZD.cpp.s
+.PHONY : src/serialRW_ZD.cpp.s
 
 src/testR.o: src/testR.cpp.o
 
@@ -491,6 +605,33 @@ src/testR.cpp.s:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testR.dir/build.make ZK_ROS/CMakeFiles/testR.dir/src/testR.cpp.s
 .PHONY : src/testR.cpp.s
 
+src/testR_ZD.o: src/testR_ZD.cpp.o
+
+.PHONY : src/testR_ZD.o
+
+# target to build an object file
+src/testR_ZD.cpp.o:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testR_ZD.dir/build.make ZK_ROS/CMakeFiles/testR_ZD.dir/src/testR_ZD.cpp.o
+.PHONY : src/testR_ZD.cpp.o
+
+src/testR_ZD.i: src/testR_ZD.cpp.i
+
+.PHONY : src/testR_ZD.i
+
+# target to preprocess a source file
+src/testR_ZD.cpp.i:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testR_ZD.dir/build.make ZK_ROS/CMakeFiles/testR_ZD.dir/src/testR_ZD.cpp.i
+.PHONY : src/testR_ZD.cpp.i
+
+src/testR_ZD.s: src/testR_ZD.cpp.s
+
+.PHONY : src/testR_ZD.s
+
+# target to generate assembly for a file
+src/testR_ZD.cpp.s:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testR_ZD.dir/build.make ZK_ROS/CMakeFiles/testR_ZD.dir/src/testR_ZD.cpp.s
+.PHONY : src/testR_ZD.cpp.s
+
 src/testW.o: src/testW.cpp.o
 
 .PHONY : src/testW.o
@@ -518,6 +659,33 @@ src/testW.cpp.s:
 	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testW.dir/build.make ZK_ROS/CMakeFiles/testW.dir/src/testW.cpp.s
 .PHONY : src/testW.cpp.s
 
+src/testW_ZD.o: src/testW_ZD.cpp.o
+
+.PHONY : src/testW_ZD.o
+
+# target to build an object file
+src/testW_ZD.cpp.o:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testW_ZD.dir/build.make ZK_ROS/CMakeFiles/testW_ZD.dir/src/testW_ZD.cpp.o
+.PHONY : src/testW_ZD.cpp.o
+
+src/testW_ZD.i: src/testW_ZD.cpp.i
+
+.PHONY : src/testW_ZD.i
+
+# target to preprocess a source file
+src/testW_ZD.cpp.i:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testW_ZD.dir/build.make ZK_ROS/CMakeFiles/testW_ZD.dir/src/testW_ZD.cpp.i
+.PHONY : src/testW_ZD.cpp.i
+
+src/testW_ZD.s: src/testW_ZD.cpp.s
+
+.PHONY : src/testW_ZD.s
+
+# target to generate assembly for a file
+src/testW_ZD.cpp.s:
+	cd /home/zyc/catkin_ws/build && $(MAKE) -f ZK_ROS/CMakeFiles/testW_ZD.dir/build.make ZK_ROS/CMakeFiles/testW_ZD.dir/src/testW_ZD.cpp.s
+.PHONY : src/testW_ZD.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -527,6 +695,8 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... testW_ZD"
+	@echo "... testR_ZD"
 	@echo "... install/strip"
 	@echo "... testW"
 	@echo "... testR"
@@ -535,6 +705,7 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... Order"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
@@ -545,19 +716,32 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
+	@echo "... serialRW_ZD"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... serialRW"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... src/Order.o"
+	@echo "... src/Order.i"
+	@echo "... src/Order.s"
 	@echo "... src/serialRW.o"
 	@echo "... src/serialRW.i"
 	@echo "... src/serialRW.s"
+	@echo "... src/serialRW_ZD.o"
+	@echo "... src/serialRW_ZD.i"
+	@echo "... src/serialRW_ZD.s"
 	@echo "... src/testR.o"
 	@echo "... src/testR.i"
 	@echo "... src/testR.s"
+	@echo "... src/testR_ZD.o"
+	@echo "... src/testR_ZD.i"
+	@echo "... src/testR_ZD.s"
 	@echo "... src/testW.o"
 	@echo "... src/testW.i"
 	@echo "... src/testW.s"
+	@echo "... src/testW_ZD.o"
+	@echo "... src/testW_ZD.i"
+	@echo "... src/testW_ZD.s"
 .PHONY : help
 
 
